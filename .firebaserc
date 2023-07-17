@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "nadhilahaz"
+  },
+  "targets": {
+    "nadhilahaz": {
+      "hosting": {
+        "nadhilah1": [
+          "nadhilahaz"
+        ],
+        "nadhilah2": [
+          "nadhilah"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
