@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 // import 'package:flutterfirebase/screen/aboutdoang.dart';
 import 'package:flutterfirebase/screen/desktop.dart';
 import 'package:flutterfirebase/screen/drawer.dart';
+import 'package:flutterfirebase/screen/isi_skills.dart';
 
 // import 'package:flutterfirebase/screen/fotonad.dart';
 import 'package:flutterfirebase/screen/portofolio_dekstop.dart';
 import 'package:flutterfirebase/screen/portomobile.dart';
+import 'package:flutterfirebase/screen/skills.dart';
 import 'package:flutterfirebase/screen/sosmeddesk.dart';
 // import 'package:flutterfirebase/screen/sosmeddesk.dart';
 import 'package:flutterfirebase/screen/sosmedmob.dart';
@@ -14,7 +16,7 @@ import 'package:flutterfirebase/screen/text_about.dart';
 import 'package:flutterfirebase/screen/text_myporto.dart';
 // import 'package:flutterfirebase/screen/text_data_diri.dart';
 import 'package:flutterfirebase/screen/text_navigasi.dart';
-import 'package:flutterfirebase/screen/text_sosial_media.dart';
+// import 'package:flutterfirebase/screen/text_sosial_media.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 // import 'package:flutterfirebase/screen/text_sosial_media.dart';
 // import 'package:flutterfirebase/screen/navigasiklik.dart';
@@ -31,6 +33,7 @@ class Home extends StatelessWidget {
 
     return Scaffold(
         extendBodyBehindAppBar: true,
+        backgroundColor: Colors.pink,
         appBar: width > 1000
             ? AppBar(
                 backgroundColor: const Color(0xffEEE3C8),
@@ -74,23 +77,53 @@ class Home extends StatelessWidget {
                   // const Spacer()
                 ],
               ),
-              AutoScrollTag(key: const ValueKey(1), controller: ctrl, index: 1, child: const About()),
+              AutoScrollTag(
+                key: const ValueKey(1),
+                controller: ctrl,
+                index: 1,
+                child: const About(),
+              ),
+
               // Container(
-              //   width: 600,
-              //   height: 400,
-              //   color: Colors.transparent,
-              //   child: About(),
-              // ),
-              // Container(
-              //   width: 600,
-              //   height: 400,
-              //   color: Colors.pink,
-              //   child: const About(),
+              //   width: double.infinity,
+              //   height: 300,
+              //   color: const Color(0xffEEE3C8),
+              //   // child: const About(),
               // ),
               AutoScrollTag(
                 key: const ValueKey(2),
                 controller: ctrl,
                 index: 2,
+                child: Column(
+                  children: [
+                    Container(
+                      width: double.infinity,
+                      height: 100,
+                      color: Colors.amber,
+                      child: const Skill(),
+                    ),
+                    Container(
+                      width: double.infinity,
+                      height: 500,
+                      // color: Colors.pink,
+                      color: Colors.white,
+                      child: const IsiSkill(),
+                      // child: width > 1000 ? const Portodeks() : const Portomob(),
+                    ),
+                  ],
+                ),
+              ),
+              // Container(
+              //   width: double.infinity,
+              //   height: 500,
+              //   color: const Color(0xffEEE3C8),
+              //   // child: const Skill(),
+              // ),
+
+              AutoScrollTag(
+                key: const ValueKey(3),
+                controller: ctrl,
+                index: 3,
                 child: Column(
                   children: [
                     Container(
@@ -109,10 +142,11 @@ class Home extends StatelessWidget {
                   ],
                 ),
               ),
+
               AutoScrollTag(
-                key: const ValueKey(3),
+                key: const ValueKey(4),
                 controller: ctrl,
-                index: 3,
+                index: 4,
                 child: Column(
                   children: [
                     Container(
