@@ -30,6 +30,14 @@ class Draw extends StatelessWidget {
               },
             ),
             ListTile(
+              leading: const Icon(Icons.school),
+              title: const Text("Education"),
+              onTap: () {
+                debugPrint('ini print from Home');
+                ctrl.scrollToIndex(1);
+              },
+            ),
+            ListTile(
               leading: const Icon(Icons.star),
               title: const Text("My Skills"),
               onTap: () {

@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 // import 'package:flutterfirebase/screen/aboutdoang.dart';
 import 'package:flutterfirebase/screen/desktop.dart';
 import 'package:flutterfirebase/screen/drawer.dart';
+import 'package:flutterfirebase/screen/education.dart';
+import 'package:flutterfirebase/screen/fotoedu.dart';
+// import 'package:flutterfirebase/screen/fotonad.dart';
 import 'package:flutterfirebase/screen/isi_skills.dart';
 
 // import 'package:flutterfirebase/screen/fotonad.dart';
@@ -18,8 +21,7 @@ import 'package:flutterfirebase/screen/text_myporto.dart';
 import 'package:flutterfirebase/screen/text_navigasi.dart';
 // import 'package:flutterfirebase/screen/text_sosial_media.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
-// import 'package:flutterfirebase/screen/text_sosial_media.dart';
-// import 'package:flutterfirebase/screen/navigasiklik.dart';
+
 import 'ctrl.dart';
 import 'mobilde.dart';
 // import 'text.dart';
@@ -33,7 +35,7 @@ class Home extends StatelessWidget {
 
     return Scaffold(
         extendBodyBehindAppBar: true,
-        backgroundColor: Colors.pink,
+        backgroundColor: const Color(0xffEEE3C8),
         appBar: width > 1000
             ? AppBar(
                 backgroundColor: const Color(0xffEEE3C8),
@@ -90,6 +92,7 @@ class Home extends StatelessWidget {
               //   color: const Color(0xffEEE3C8),
               //   // child: const About(),
               // ),
+
               AutoScrollTag(
                 key: const ValueKey(2),
                 controller: ctrl,
@@ -99,26 +102,61 @@ class Home extends StatelessWidget {
                     Container(
                       width: double.infinity,
                       height: 100,
-                      color: Colors.amber,
+                      color: const Color.fromARGB(255, 138, 123, 118),
                       child: const Skill(),
                     ),
                     Container(
                       width: double.infinity,
                       height: 500,
                       // color: Colors.pink,
-                      color: Colors.white,
+                      color: const Color.fromARGB(255, 138, 123, 118),
                       child: const IsiSkill(),
                       // child: width > 1000 ? const Portodeks() : const Portomob(),
                     ),
                   ],
                 ),
               ),
-              // Container(
-              //   width: double.infinity,
-              //   height: 500,
-              //   color: const Color(0xffEEE3C8),
-              //   // child: const Skill(),
-              // ),
+              const SizedBox(
+                width: double.infinity,
+                height: 100,
+                child: Education(),
+              ),
+              Container(
+                width: double.infinity,
+                height: 700,
+                color: Colors.white,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Column(
+                      children: <Widget>[
+                        Stack(
+                          clipBehavior: Clip.none,
+                          children: <Widget>[
+                            Container(width: 600.0, height: 600.0, color: Colors.orange),
+                            Positioned(
+                              bottom: -50.0,
+                              left: -100.0,
+                              child: Stack(
+                                clipBehavior: Clip.hardEdge,
+                                children: <Widget>[
+                                  Container(
+                                    width: 400.0,
+                                    height: 400.0,
+                                    color: Colors.green,
+                                    child: const Fotoedu(),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
 
               AutoScrollTag(
                 key: const ValueKey(3),
