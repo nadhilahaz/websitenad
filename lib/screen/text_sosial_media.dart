@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutterfirebase/screen/responsive.dart';
+// import 'package:flutterfirebase/screen/responsive.dart';
 // import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
+// import 'package:google_fonts/google_fonts.dart';
 import 'dart:html' as html;
 
 class Sosmed extends StatelessWidget {

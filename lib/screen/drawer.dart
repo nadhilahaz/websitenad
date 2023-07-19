@@ -20,6 +20,7 @@ class Draw extends StatelessWidget {
                 ctrl.scrollToIndex(0);
               },
             ),
+            const Divider(),
             ListTile(
               leading: const Icon(Icons.person_outline_sharp),
               title: const Text("About"),
@@ -29,11 +30,19 @@ class Draw extends StatelessWidget {
               },
             ),
             ListTile(
+              leading: const Icon(Icons.star),
+              title: const Text("My Skills"),
+              onTap: () {
+                debugPrint('ini print from Home');
+                ctrl.scrollToIndex(2);
+              },
+            ),
+            ListTile(
               leading: const Icon(Icons.assignment_outlined),
               title: const Text("Portofolio"),
               onTap: () {
                 debugPrint('ini print from Home');
-                ctrl.scrollToIndex(2);
+                ctrl.scrollToIndex(3);
               },
             ),
             // const Divider(),
@@ -42,7 +51,7 @@ class Draw extends StatelessWidget {
               title: const Text("Social Media"),
               onTap: () {
                 debugPrint('ini print from Home');
-                ctrl.scrollToIndex(3);
+                ctrl.scrollToIndex(4);
               },
             ),
             // ListTile(

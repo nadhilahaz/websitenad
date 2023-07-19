@@ -11,11 +11,6 @@ class Nav extends StatelessWidget {
         child: const Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            // SizedBox(
-            //   height: 80,
-            //   width: 150,
-            //   child: Text('\nFebrie Tsani\n Sovranita', style: TextStyle(fontSize: 10)),
-            // ),
             Row(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[

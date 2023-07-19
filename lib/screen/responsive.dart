@@ -15,6 +15,22 @@ class Respon {
     }
   }
 
+  double skill(double lebarLayar) {
+    if (lebarLayar > 1200) {
+      return 50.0;
+    } else if (lebarLayar < 500) {
+      return 30.0;
+    } else {
+      const fontMax = 50.0;
+      const fontMin = 30.0;
+      final widhtDinamic = lebarLayar - 500;
+      const widthFixed = 1200 - 500;
+
+      final size = fontMin + ((fontMax - fontMin) + (widhtDinamic / widthFixed));
+      return size;
+    }
+  }
+
   double nama(double lebarLayar) {
     if (lebarLayar > 1200) {
       return 30.0;

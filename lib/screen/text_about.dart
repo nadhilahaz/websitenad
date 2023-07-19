@@ -16,7 +16,7 @@ class About extends StatelessWidget {
 
     return Container(
       width: 600,
-      height: 400,
+      height: 700,
       color: Colors.transparent,
       child: SizedBox(
         width: double.infinity,
