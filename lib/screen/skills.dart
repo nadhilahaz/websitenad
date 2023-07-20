@@ -25,7 +25,7 @@ class Skill extends StatelessWidget {
           children: [
             Text(
               "SKILLS",
-              style: GoogleFonts.lilitaOne(color: Colors.brown, fontSize: 30
+              style: GoogleFonts.dmSerifDisplay(color: Colors.brown, fontSize: 30
                   // fontSize: hitung.tentang(lebarLayar / 1.5),
                   ),
             ),

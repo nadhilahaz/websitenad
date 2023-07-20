@@ -12,7 +12,7 @@ class Sosialmedmob extends StatelessWidget {
       children: [
         Text(
           'Say Hello at:',
-          style: GoogleFonts.lilitaOne(
+          style: GoogleFonts.dmSerifDisplay(
             color: const Color.fromARGB(255, 88, 68, 61),
             fontSize: 30,
           ),

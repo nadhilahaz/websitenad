@@ -22,7 +22,7 @@ class Portofolio extends StatelessWidget {
             children: [
               Text(
                 'COMING SOON',
-                style: GoogleFonts.lilitaOne(
+                style: GoogleFonts.ysabeau(
                   color: Colors.brown,
                   fontSize: 30,
                 ),

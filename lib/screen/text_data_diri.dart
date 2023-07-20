@@ -18,7 +18,7 @@ class Biodata extends StatelessWidget {
         children: [
           Text(
             "HI !, I'M NADHILAH HAZRATI ",
-            style: GoogleFonts.lilitaOne(shadows: <Shadow>[
+            style: GoogleFonts.rozhaOne(shadows: <Shadow>[
               const Shadow(
                 offset: Offset(10.0, 10.0),
                 blurRadius: 3.0,

@@ -5,8 +5,8 @@ import 'package:flutterfirebase/screen/responsive.dart';
 import 'package:google_fonts/google_fonts.dart';
 // import 'home.dart';/
 
-class About extends StatelessWidget {
-  const About({super.key});
+class TextEdu extends StatelessWidget {
+  const TextEdu({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,8 +26,8 @@ class About extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "ABOUT ME",
-              style: GoogleFonts.dmSerifDisplay(
+              "EDUCATION",
+              style: GoogleFonts.abrilFatface(
                 color: Colors.brown,
                 fontSize: hitung.tentang(lebarLayar / 1.5),
               ),
@@ -40,14 +40,14 @@ class About extends StatelessWidget {
             // const Spacer(
             //   flex: 1,
             // ),
-            Text(
-              "Hi there!  I am Nadhilah Hazrati, I'm 19 Years Old. I was born in Ciamis and now im living in Tasikmalaya. Currently studying at Siliwangi University Majoring in Informatics on 3rd semester. Technology and Programming is fun for me, we can pour all our ideas there. I'm currently developing my skills. Beside that, i also like cooking. I hope we can connect!",
-              textAlign: TextAlign.center,
-              textScaleFactor: 2,
-              style: GoogleFonts.ysabeau(color: Colors.brown, fontSize: 10
-                  //  fontSize: hitungEdan(width),
-                  ),
-            ),
+            // Text(
+            //   "Hi there!  I am Nadhilah Hazrati, I'm 19 Years Old. I was born in Ciamis and now im living in Tasikmalaya. Currently studying at Siliwangi University Majoring in Informatics on 3rd semester. Technology and Programming is fun for me, we can pour all our ideas there. I'm currently developing my skills. Beside that, i also like cooking. I hope we can connect!",
+            //   textAlign: TextAlign.center,
+            //   textScaleFactor: 2,
+            //   style: GoogleFonts.lilitaOne(color: Colors.brown, fontSize: 10
+            //       //  fontSize: hitungEdan(width),
+            //       ),
+            // ),
           ],
         ),
       ),

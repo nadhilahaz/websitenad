@@ -18,7 +18,7 @@ class Myporto extends StatelessWidget {
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           Text(
             "MY PORTOFOLIO'S",
-            style: GoogleFonts.lilitaOne(
+            style: GoogleFonts.dmSerifDisplay(
               color: Colors.brown,
               fontSize: 30,
             ),
