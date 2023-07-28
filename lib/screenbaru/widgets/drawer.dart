@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'ctrl.dart';
+// import 'ctrl.dart';
 
 class Draw extends StatelessWidget {
   const Draw({super.key});
@@ -17,7 +17,7 @@ class Draw extends StatelessWidget {
               title: const Text("Home"),
               onTap: () {
                 debugPrint('ini print from Home');
-                ctrl.scrollToIndex(0);
+                // ctrl.scrollToIndex(0);
               },
             ),
             const Divider(),
@@ -26,7 +26,7 @@ class Draw extends StatelessWidget {
               title: const Text("About"),
               onTap: () {
                 debugPrint('ini print from Home');
-                ctrl.scrollToIndex(1);
+                // ctrl.scrollToIndex(1);
               },
             ),
             ListTile(
@@ -34,15 +34,15 @@ class Draw extends StatelessWidget {
               title: const Text("Education"),
               onTap: () {
                 debugPrint('ini print from Home');
-                ctrl.scrollToIndex(2);
+                // ctrl.scrollToIndex(2);
               },
             ),
             ListTile(
               leading: const Icon(Icons.star),
-              title: const Text("Skills"),
+              title: const Text("My Skills"),
               onTap: () {
                 debugPrint('ini print from Home');
-                ctrl.scrollToIndex(3);
+                // ctrl.scrollToIndex(3);
               },
             ),
             ListTile(
@@ -50,24 +50,24 @@ class Draw extends StatelessWidget {
               title: const Text("Experience"),
               onTap: () {
                 debugPrint('ini print from Home');
-                ctrl.scrollToIndex(3);
+                // ctrl.scrollToIndex(3);
               },
             ),
-            // ListTile(
-            //   leading: const Icon(Icons.assignment_outlined),
-            //   title: const Text("Portofolio"),
-            //   onTap: () {
-            //     debugPrint('ini print from Home');
-            //     ctrl.scrollToIndex(4);
-            //   },
-            // ),
+            ListTile(
+              leading: const Icon(Icons.assignment_outlined),
+              title: const Text("Portofolio"),
+              onTap: () {
+                debugPrint('ini print from Home');
+                // ctrl.scrollToIndex(4);
+              },
+            ),
             // const Divider(),
             ListTile(
               leading: const Icon(Icons.phone_android_sharp),
               title: const Text("Social Media"),
               onTap: () {
                 debugPrint('ini print from Home');
-                ctrl.scrollToIndex(5);
+                // ctrl.scrollToIndex(5);
               },
             ),
             // ListTile(

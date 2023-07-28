@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutterfirebase/screen/desktop.dart';
 import 'package:flutterfirebase/screen/drawer.dart';
-import 'package:flutterfirebase/screen/education.dart';
-import 'package:flutterfirebase/screen/fotoedu.dart';
-import 'package:flutterfirebase/screen/isi_skills.dart';
+// import 'package:flutterfirebase/screen/education.dart';
+// import 'package:flutterfirebase/screen/fotoedu.dart';
+// import 'package:flutterfirebase/screen/isi_skills.dart';
 import 'package:flutterfirebase/screen/isi_textedu.dart';
 import 'package:flutterfirebase/screen/portofolio_dekstop.dart';
 import 'package:flutterfirebase/screen/portomobile.dart';
@@ -51,13 +51,11 @@ class Home extends StatelessWidget {
         // backgroundColor: Color.fromARGB(255, 180, 163, 169),
         body: ListView(controller: ctrl, children: [
           Column(
-            // crossAxisAlignment: CrossAxisAlignment.center,
-            // mainAxisAlignment: MainAxisAlignment.start,
             children: [
               // AutoScrollTag(key: const ValueKey(2), controller: ctrl, index: 2, child: const View1()),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
-                // mainAxisAlignment: MainAxisAlignment.start,
+                // mainAxisAlinment: MainAxisAlignment.start,
                 children: [
                   AutoScrollTag(
                     key: const ValueKey(0),
@@ -81,29 +79,12 @@ class Home extends StatelessWidget {
                 child: const About(),
               ),
 
-              // Container(
-              //   width: double.infinity,
-              //   height: 300,
-              //   color: const Color(0xffEEE3C8),
-              //   // child: const About(),
-              // ),
-              // AutoScrollTag(
-              //   key: const ValueKey(2),
-              //   controller: ctrl,
-              //   index: 2,
-              // ),
               AutoScrollTag(
                 key: const ValueKey(2),
                 controller: ctrl,
                 index: 2,
                 child: Column(
                   children: [
-                    // Container(
-                    //   width: double.infinity,
-                    //   height: 100,
-                    //   color: Colors.black,
-                    //   // child: ,
-                    // ),
                     Container(
                       width: double.infinity,
                       height: 700,
@@ -150,29 +131,44 @@ class Home extends StatelessWidget {
                         height: 700,
                         // color: Colors.pink,
                         color: Colors.white,
-                        child: Row(
-                          children: [
-                            Container(
-                              margin: const EdgeInsets.all(10),
-                              child: const Containerskill(),
-                            ),
-                            Container(
-                              margin: const EdgeInsets.all(10),
-                              child: const Containerskill(),
-                            ),
-                            Container(
-                              margin: const EdgeInsets.all(10),
-                              child: const Containerskill(),
-                            ),
-                            Container(
-                              margin: const EdgeInsets.all(10),
-                              child: const Containerskill(),
-                            ),
-                            Container(
-                              margin: const EdgeInsets.all(10),
-                              child: const Containerskill(),
-                            ),
-                          ],
+                        child: SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                          child: Row(
+                            children: [
+                              Container(
+                                margin: const EdgeInsets.all(10),
+                                child: const Containerskill(),
+                              ),
+                              Container(
+                                margin: const EdgeInsets.all(10),
+                                child: const Containerskill(),
+                              ),
+                              Container(
+                                margin: const EdgeInsets.all(10),
+                                child: const Containerskill(),
+                              ),
+                              Container(
+                                margin: const EdgeInsets.all(10),
+                                child: const Containerskill(),
+                              ),
+                              Container(
+                                margin: const EdgeInsets.all(10),
+                                child: const Containerskill(),
+                              ),
+                              Container(
+                                margin: const EdgeInsets.all(10),
+                                child: const Containerskill(),
+                              ),
+                              Container(
+                                margin: const EdgeInsets.all(10),
+                                child: const Containerskill(),
+                              ),
+                              Container(
+                                margin: const EdgeInsets.all(10),
+                                child: const Containerskill(),
+                              ),
+                            ],
+                          ),
                         )
                         // child: width > 1000 ? const Portodeks() : const Portomob(),
                         ),

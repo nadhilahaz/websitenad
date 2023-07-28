@@ -7,7 +7,9 @@ class Navklik extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var lebarLayar = MediaQuery.of(context).size.width;
+    var lebarLayar = MediaQuery.of(
+      context,
+    ).size.width;
 
     var hitung = Respon();
 
