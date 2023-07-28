@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-// import 'ctrl.dart';
+// import '../screenbaru/widgets/ctrl.dart';
 
 class Draw extends StatelessWidget {
   const Draw({super.key});
@@ -39,7 +39,7 @@ class Draw extends StatelessWidget {
             ),
             ListTile(
               leading: const Icon(Icons.star),
-              title: const Text("My Skills"),
+              title: const Text("Skills"),
               onTap: () {
                 debugPrint('ini print from Home');
                 // ctrl.scrollToIndex(3);
@@ -53,14 +53,14 @@ class Draw extends StatelessWidget {
                 // ctrl.scrollToIndex(3);
               },
             ),
-            ListTile(
-              leading: const Icon(Icons.assignment_outlined),
-              title: const Text("Portofolio"),
-              onTap: () {
-                debugPrint('ini print from Home');
-                // ctrl.scrollToIndex(4);
-              },
-            ),
+            // ListTile(
+            //   leading: const Icon(Icons.assignment_outlined),
+            //   title: const Text("Portofolio"),
+            //   onTap: () {
+            //     debugPrint('ini print from Home');
+            //     ctrl.scrollToIndex(4);
+            //   },
+            // ),
             // const Divider(),
             ListTile(
               leading: const Icon(Icons.phone_android_sharp),

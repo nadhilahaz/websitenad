@@ -8,7 +8,7 @@ import 'package:flutterfirebase/screenbaru/widgets/isisosmed.dart';
 import 'package:flutterfirebase/screenbaru/widgets/namaexpe.dart';
 // import 'package:flutterfirebase/screenbaru/widgets/namaporto.dart';
 import 'package:flutterfirebase/screenbaru/widgets/namaskill.dart';
-import 'package:flutterfirebase/screenbaru/widgets/sayhalo.dart';
+// import 'package:flutterfirebase/screenbaru/widgets/sayhalo.dart';
 import 'package:flutterfirebase/screenbaru/widgets/sosmeddoang.dart';
 import 'package:flutterfirebase/screenbaru/widgets/textedu.dart';
 import 'package:flutterfirebase/screenbaru/widgets/textpendidikan.dart';

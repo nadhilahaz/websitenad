@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'ctrl.dart';
+import '../screenbaru/widgets/ctrl.dart';
 
 class Draw extends StatelessWidget {
   const Draw({super.key});
